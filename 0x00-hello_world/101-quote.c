@@ -1,14 +1,12 @@
-/**
- * main - prints a statement using write, and goes to a new line
- * Return: 1 always
- */
 #include <unistd.h>
-#include <string.h>
 
+/**
+ * main - outputs a particular text
+ *
+ * Return: Always 1 (Success)
+ */
 int main(void)
 {
-	/* Outputing a message and a new line */
-	const char* message = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
-	ssize_t bytesWritten = write(2, message, strlen(message));
-	return (0);
+	write(2, "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", 59);
+	return (1);
 }
