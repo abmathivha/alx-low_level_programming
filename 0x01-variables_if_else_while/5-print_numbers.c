@@ -7,12 +7,11 @@
  */
 int main(void)
 {
-	char[10] numbers = "0123456789";
 	int i = 0;
 
-	while (i <= 8)
+	while (i <= 9)
 	{
-		putchar(numbers[i]);
+		printf("%d", i);
 		i++;
 	}
 	putchar('\n');
