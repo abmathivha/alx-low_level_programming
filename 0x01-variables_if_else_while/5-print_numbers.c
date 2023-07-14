@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-	numbers = "0123456789";
+	char[10] numbers = "0123456789";
 	int i = 0;
 
 	while (i <= 8)
