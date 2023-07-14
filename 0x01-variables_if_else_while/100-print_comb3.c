@@ -16,12 +16,13 @@ int main(void)
 		while (j <= 57)
 		{
 			putchar(i);
-			putchat(j);
-			if (i != 56 && j != 57)
+			putchar(j);
+			if (i + j != 113)
 			{
 				putchar(',');
 				putchar(' ');
 			}
+			j++;
 		}
 		i++;
 	}
