@@ -9,8 +9,8 @@ int main(void)
 {
 	char letters[26] = "abcdefghijklmnopqrstuvwxyz";
 	int i = 0;
-	
-	while(i <= 25)
+
+	while (i <= 25)
 	{
 		putchar(letters[i]);
 		i++;
