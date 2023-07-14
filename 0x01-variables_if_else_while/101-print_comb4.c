@@ -15,7 +15,7 @@ int main(void)
 	{
 		j = i + 1;
 		while (j <= 56)
-		{       	
+		{
 			k = j + 1;
 			while (k <= 57)
 			{
@@ -31,7 +31,7 @@ int main(void)
 			}
 			j++;
 		}
-		i++;	
+		i++;
 	}
 	putchar('\n');
 	return (0);
