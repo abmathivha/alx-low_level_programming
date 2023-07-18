@@ -13,7 +13,7 @@ int main(void)
 		next  = cur + prev;
 		prev = cur;
 		if (cur % 2 == 0)
-			sum += cur
+			sum += cur;
 		cur = next;
 	}
 	printf("%ld\n", sum);
