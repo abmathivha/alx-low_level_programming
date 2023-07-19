@@ -6,7 +6,8 @@
  */
 int main(void)
 {
-	float i = 0, prev = 1, cur = 2, next = 0;
+	float prev = 1, cur = 2, next = 0;
+	int i;
 
 	for (i = 0; i < 98; i++)
 	{
