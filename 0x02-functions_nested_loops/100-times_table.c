@@ -23,7 +23,9 @@ void print_times_table(int n)
 				printf("%4d", i * j);
 			}
 			else 
-				printf("0,");
+			{
+				printf("0");
+			}
 		}
 		printf("\n");
 	}
