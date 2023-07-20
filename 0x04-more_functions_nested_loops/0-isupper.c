@@ -1,17 +1,16 @@
 #include "main.h"
+
 /**
- * _isupper - prints a to z ten times
- *
- * Description: determines if a char is lower
- * @c: the input char
- *
- * Return: 1 if char is lower
-*/
+ * _isupper - checks if a  character is uppercase or not
+ * @c: character to be tested
+ * Return: 1 whether it is, 0 otherwise
+ */
+
 int _isupper(int c)
 {
-	if (c >= 'A' && c <= 'Z')i
+	if ((c >= 'A') && (c <= 'Z'))
 	{
-		return (1);  /* Character is lowercase */
+		return (1);
 	}
-	return (0);  /* Character is not lowercase */
+	return (0);
 }
