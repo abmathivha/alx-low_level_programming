@@ -8,8 +8,6 @@
 void puts_half(char *s)
 {
 	int length = 0;
-	int i = 0;
-	char temp;
 
 	while (*s != '\0')
 	{
