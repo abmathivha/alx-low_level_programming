@@ -1,24 +1,23 @@
 #include "main.h"
 
 /**
- *  _strcpy - Copy paste string
+ *  _strcpy - copy and paste string
  *
  *  @dest: destination
  *  @src: source
  *
  *  Return: dest
  */
-
 char *_strcpy(char *dest, char *src)
 {
+	int i = 0;
 
-	while (*src  != '\0')
+	while (*(src + i) != '\0')
 	{
-		*dest  = *src;
-		src++;
-		dest++;
+		*(dest + i) = *(src + i);
+		i++;
 	}
-	*(++dest) = '\0';
+	*(dest + i) = '\0';
 
 	return (dest);
 }
