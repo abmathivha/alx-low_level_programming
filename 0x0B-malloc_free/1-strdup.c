@@ -3,16 +3,16 @@
 #include <string.h>
 
 /**
- * _strdup - Prints the number of argumnets
+ * _strdup - prints the number of argumnets
  *
- * @str: argument count
+ * @str: argument array
  *
  * Return: return 0
  */
 
 char *_strdup(char *str)
 {
-	char *dup;
+	char *temp;
 	unsigned int i, len;
 
 	i = 0;
@@ -24,13 +24,13 @@ char *_strdup(char *str)
 	while (str[len])
 		len++;
 
-	dup = malloc(sizeof(char) * (len + 1));
+	temp = malloc(sizeof(char) * (len + 1));
 
-	if (dup == NULL)
+	if (temp == NULL)
 		return (NULL);
 
-	while ((dup[i] = str[i]) != '\0')
+	while ((temp[i] = str[i]) != '\0')
 		i++;
 
-	return (dup);
+	return (temp);
 }
