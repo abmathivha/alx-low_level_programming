@@ -3,34 +3,34 @@
 #include <string.h>
 
 /**
- * _strdup - prints the number of argumnets
+ * _strdup - Prints the number of argumnets
  *
- * @count: argument count
+ * @str: argument count
  *
  * Return: return 0
  */
 
-char *_strdup(char *count)
+char *_strdup(char *str)
 {
-	char *new_arr;
+	char *dup;
 	unsigned int i, len;
 
 	i = 0;
 	len = 0;
 
-	if (count == NULL)
+	if (str == NULL)
 		return (NULL);
 
-	while (count[len])
+	while (str[len])
 		len++;
 
-	new_arr = malloc(sizeof(char) * (len + 1));
+	dup = malloc(sizeof(char) * (len + 1));
 
-	if (new_arr == NULL)
+	if (dup == NULL)
 		return (NULL);
 
-	while ((new_arr[i] = str[i]) != '\0')
+	while ((dup[i] = str[i]) != '\0')
 		i++;
 
-	return (new_arr);
+	return (dup);
 }
