@@ -32,7 +32,8 @@ int main(int argc, char *argv[])
 		w = write(to, buf, r);
 		if (w != r)
 		{
-			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]), exit(99);
+			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
+			exit(99);
 		}
 	}
 	if (r == -1)
@@ -42,13 +43,9 @@ int main(int argc, char *argv[])
 	}
 	c = close(from);
 	if (c == -1)
-	{
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", from), exit(100);
-	}
 	c = close(to);
 	if (c == -1)
-	{
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", to), exit(100);
-	}
 	return (0);
 }
